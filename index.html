@@ -127,6 +127,27 @@
         .certif-body h4 { font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:#fff;margin-bottom:8px; }
         .certif-body p { font-size:0.83rem;line-height:1.65;opacity:0.68; }
 
+        /* TABLEAU DE SYNTHÈSE */
+        .synthese-wrap { margin-top:40px; }
+        .synthese-divider { display:flex;align-items:center;gap:18px;margin-bottom:28px; }
+        .synthese-divider-line { flex:1;height:1px;background:linear-gradient(90deg,rgba(212,175,55,0.4),transparent); }
+        .synthese-divider-label { font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--gold);letter-spacing:4px;text-transform:uppercase;white-space:nowrap; }
+        .synthese-divider-line.right { background:linear-gradient(270deg,rgba(212,175,55,0.4),transparent); }
+        .synthese-pdf-block { background:rgba(255,255,255,0.015);border:1px solid rgba(212,175,55,0.2);border-radius:8px;overflow:hidden; }
+        .synthese-pdf-header { display:flex;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1px solid rgba(212,175,55,0.12);background:rgba(212,175,55,0.04); }
+        .synthese-pdf-title { display:flex;align-items:center;gap:12px; }
+        .synthese-pdf-icon { width:36px;height:36px;background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.3);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px; }
+        .synthese-pdf-name { font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:#fff; }
+        .synthese-pdf-sub { font-size:0.72rem;color:rgba(255,255,255,0.4);letter-spacing:1px;margin-top:2px; }
+        .synthese-pdf-actions { display:flex;gap:10px;align-items:center; }
+        .synthese-btn-toggle { background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.1);padding:7px 16px;border-radius:20px;cursor:pointer;font-size:0.75rem;font-family:'DM Sans',sans-serif;letter-spacing:1px;transition:all .25s; }
+        .synthese-btn-toggle:hover { background:rgba(255,255,255,0.09);color:#fff; }
+        .synthese-btn-dl { background:transparent;color:var(--gold);border:1px solid var(--gold);padding:7px 18px;border-radius:20px;cursor:pointer;font-size:0.75rem;font-family:'DM Sans',sans-serif;letter-spacing:1px;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:6px; }
+        .synthese-btn-dl:hover { background:var(--gold);color:#000;box-shadow:0 0 20px var(--gold-glow); }
+        .synthese-pdf-viewer { height:0;overflow:hidden;transition:height .45s cubic-bezier(0.4,0,0.2,1); }
+        .synthese-pdf-viewer.open { height:520px; }
+        .synthese-pdf-viewer embed { width:100%;height:100%;display:block; }
+
         /* 05 PROJETS */
         .project-filters { display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px; }
         .filter-btn { background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.65);border:1px solid var(--glass-border);padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .3s;font-size:0.78rem;font-family:'DM Sans',sans-serif;letter-spacing:1px; }
@@ -249,7 +270,7 @@
         <h1>Bonjour, je m'appelle<br>
             <span class="gold-text float-name">TRUMPFS Rémi</span>
         </h1>
-        <h2>BTS SIO SLAM &nbsp;|&nbsp; Développeur Passionné</h2>
+        <h2>BTS SIO SLAM &nbsp;|&nbsp; Développeur</h2>
         <button id="btn-acces" class="btn-gold">Accéder au portfolio</button>
     </div>
 </section>
@@ -276,12 +297,10 @@
             (Services Informatiques aux Organisations), option <strong>SLAM</strong> — Solutions Logicielles
             et Applications Métiers — au Lycée Ozenne de Toulouse.<br><br>
             Passionné d'informatique depuis l'âge de 15 ans, j'ai débuté en autodidacte avant de faire
-            de cette passion un véritable projet professionnel. Mon quotidien, c'est concevoir des
-            applications <strong>performantes et élégantes</strong>, debugger jusqu'à trouver la ligne
-            fautive, et transformer une idée floue en quelque chose de concret.<br><br>
-            À l'aise aussi bien côté <strong>frontend</strong> (HTML/CSS/JS) que <strong>backend</strong>
+            de cette passion un véritable projet professionnel. <br><br>
+            J'aime aussi bien côté <strong>frontend</strong> (HTML/CSS/JS) que <strong>backend</strong>
             (PHP, C#, Java) et <strong>bases de données</strong> (MySQL), je cherche constamment à
-            élargir mes compétences — avec sérieux, curiosité, et un peu d'obsession.
+            élargir mes compétences avec sérieux, curiosité.
         </p>
     </section>
 
@@ -295,12 +314,12 @@
                 <div class="timeline-content">
                     <div class="timeline-header">
                         <h4>BTS SIO SLAM</h4>
-                        <span class="timeline-date">2024 – 2026</span>
+                        <span class="timeline-date">2024 - 2026</span>
                     </div>
                     <div class="timeline-details">
                         <p><strong>Lycée Ozenne</strong>, Toulouse</p>
                         <p>Spécialisation en Solutions Logicielles et Applications Métiers : développement web full-stack, bases de données relationnelles, programmation orientée objet (Java, C#), gestion de projet en méthode agile.</p>
-                        <p>Projets : application de gestion de stocks, portfolio dynamique, scripts d'automatisation Python/PowerShell, stages en entreprise.</p>
+                        <p>Projets : portfolio, API, application lourde, Site Web, etc...</p>
                     </div>
                 </div>
             </div>
@@ -312,9 +331,9 @@
                         <span class="timeline-date">2021 – 2024</span>
                     </div>
                     <div class="timeline-details">
-                        <p><strong>Lycée [Nom]</strong>, [Ville]</p>
+                        <p><strong>Lycée Jean Monnet</strong>, Foulayronnes</p>
                         <p>Option <strong>Réseaux Informatiques et Systèmes Communicants</strong> : administration système Windows/Linux, configuration réseau (VLAN, VPN, DHCP), virtualisation (VMware/VirtualBox), cybersécurité de base.</p>
-                        <p>Projets : déploiement Active Directory, sécurisation LAN, serveurs Apache/Nginx.</p>
+                        <p>Projets : decouverte DNS, adressage IP, IPV4, systeme embarqué, etc...</p>
                     </div>
                 </div>
             </div>
@@ -326,7 +345,7 @@
                         <span class="timeline-date">2017 – 2021</span>
                     </div>
                     <div class="timeline-details">
-                        <p>[Ville], France</p>
+                        <p>Fleurance</p>
                         <p>Premiers pas en informatique. Ateliers de robotique et de programmation Scratch. Brevet des collèges mention Bien.</p>
                     </div>
                 </div>
@@ -345,25 +364,21 @@
                         <span class="flip-hint">clic ↻</span>
                         <div class="fc-title">Développement Web</div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>HTML / CSS</span><span>95%</span></div>
-                            <div class="progress-bar"><div class="progress-fill" data-size="95%"></div></div>
+                            <div class="skill-info"><span>HTML / CSS</span><span>80%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-size="80%"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
-                            <div class="progress-bar"><div class="progress-fill" data-size="80%"></div></div>
+                            <div class="skill-info"><span>JavaScript</span><span>60%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-size="60%"></div></div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info"><span>PHP</span><span>75%</span></div>
                             <div class="progress-bar"><div class="progress-fill" data-size="75%"></div></div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Laravel</span><span>60%</span></div>
-                            <div class="progress-bar"><div class="progress-fill" data-size="60%"></div></div>
-                        </div>
                     </div>
                     <div class="fc-back">
                         <h4>Mon Parcours Web</h4>
-                        <p>Passionné de développement depuis mes 15 ans, j'ai débuté en autodidacte avec HTML/CSS. Mon BTS SIO m'a permis de transformer cette passion en expertise, en découvrant PHP, Laravel et les architectures modernes.</p>
+                        <p>Passionné de développement depuis mes 15 ans, j'ai débuté en autodidacte avec HTML/CSS a l'age de 15 ans. Mon BTS SIO m'a permis de transformer cette passion en un avenir.</p>
                     </div>
                 </div>
             </div>
@@ -373,16 +388,16 @@
                         <span class="flip-hint">clic ↻</span>
                         <div class="fc-title">Programmation</div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>C#</span><span>85%</span></div>
-                            <div class="progress-bar"><div class="progress-fill" data-size="85%"></div></div>
+                            <div class="skill-info"><span>C#</span><span>60%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-size="60%"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>Java</span><span>70%</span></div>
-                            <div class="progress-bar"><div class="progress-fill" data-size="70%"></div></div>
+                            <div class="skill-info"><span>Java</span><span>40%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-size="40%"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>Python</span><span>65%</span></div>
-                            <div class="progress-bar"><div class="progress-fill" data-size="65%"></div></div>
+                            <div class="skill-info"><span>Python</span><span>25%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-size="25%"></div></div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info"><span>Lua (Roblox)</span><span>80%</span></div>
@@ -407,10 +422,6 @@
                         <div class="skill-item">
                             <div class="skill-info"><span>SQL Server</span><span>75%</span></div>
                             <div class="progress-bar"><div class="progress-fill" data-size="75%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Entity Framework</span><span>65%</span></div>
-                            <div class="progress-bar"><div class="progress-fill" data-size="65%"></div></div>
                         </div>
                     </div>
                     <div class="fc-back">
@@ -457,13 +468,13 @@
                             <div class="progress-bar"><div class="progress-fill" data-size="70%"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>Figma / Design</span><span>60%</span></div>
+                            <div class="skill-info"><span>Design</span><span>60%</span></div>
                             <div class="progress-bar"><div class="progress-fill" data-size="60%"></div></div>
                         </div>
                     </div>
                     <div class="fc-back">
                         <h4>Méthodes de Travail</h4>
-                        <p>Git pour le versioning, Jira/Trello pour la gestion de projet, et Figma pour la conception UI. La méthode Agile est au cœur de ma façon de travailler, en itérant vite et en livrant de la valeur régulièrement.</p>
+                        <p>Git pour le versioning, Trello pour la gestion de projet. La méthode Agile est au cœur de ma façon de travailler.</p>
                     </div>
                 </div>
             </div>
@@ -475,10 +486,6 @@
                         <div class="skill-item">
                             <div class="skill-info"><span>Autonomie</span><span>95%</span></div>
                             <div class="progress-bar"><div class="progress-fill" data-size="95%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Résolution de problèmes</span><span>90%</span></div>
-                            <div class="progress-bar"><div class="progress-fill" data-size="90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info"><span>Travail en équipe</span><span>85%</span></div>
@@ -498,38 +505,84 @@
     <section class="section-card" id="sec-certifications">
         <div class="section-number">04</div>
         <h3 class="section-title">Certifications</h3>
+
         <div class="certif-grid">
+
+            <!-- BIA -->
             <div class="certif-card">
-                <img class="certif-img"
-                    src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80"
-                    alt="BTS SIO SLAM">
+                <a href="pdf/bts-sio.pdf" target="_blank">
+                    <img class="certif-img"
+                        src="https://institutionsaintaspais.fr/wp-content/uploads/2024/09/arton2372.webp"
+                        alt="BTS SIO SLAM">
+                </a>
                 <div class="certif-body">
-                    <span class="certif-badge">Formation diplômante</span>
-                    <h4>BTS SIO SLAM</h4>
-                    <p>Diplôme d'État de niveau 5 (Bac+2) spécialisé dans le développement d'applications logicielles et métiers. Lycée Ozenne, Toulouse — promotion 2024-2026.</p>
+                    <span class="certif-badge">Aeronautique</span>
+                    <h4>Brevet d'initiation Aeronautique</h4>
+                    <p>BIA obtenu en 2024</p>
                 </div>
             </div>
+
+            <!-- ANSSI -->
             <div class="certif-card">
-                <img class="certif-img"
-                    src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80"
-                    alt="ANSSI MOOC Cybersécurité">
+                <a href="pdf/anssi.pdf" target="_blank">
+                    <img class="certif-img"
+                        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80"
+                        alt="ANSSI MOOC Cybersécurité">
+                </a>
                 <div class="certif-body">
                     <span class="certif-badge">Cybersécurité</span>
                     <h4>MOOC ANSSI</h4>
-                    <p>Certification délivrée par l'Agence Nationale de la Sécurité des Systèmes d'Information. Formation aux fondamentaux : menaces, bonnes pratiques et protection des données.</p>
+                    <p>Certification ANSSI (En Cours)</p>
                 </div>
             </div>
+
+            <!-- PIX -->
             <div class="certif-card">
-                <img class="certif-img"
-                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
-                    alt="Certification PIX">
+                <a href="pdf/certification-pix-20260310.pdf" target="_blank">
+                    <img class="certif-img"
+                        src="https://www.motdepasse.xyz/blog/wp-content/uploads/2024/12/couverture-PlX.jpg"
+                        alt="Certification PIX">
+                </a>
                 <div class="certif-body">
                     <span class="certif-badge">Compétences numériques</span>
                     <h4>Certification PIX</h4>
-                    <p>Certification officielle des compétences numériques reconnue par l'Éducation Nationale. Évalue 5 domaines : traitement de l'information, communication, création de contenu et environnement numérique.</p>
+                    <p>Certification officielle...</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ===== TABLEAU DE SYNTHÈSE ===== -->
+        <div class="synthese-wrap">
+            <div class="synthese-divider">
+                <div class="synthese-divider-line"></div>
+                <div class="synthese-divider-label">Tableau de Synthèse</div>
+                <div class="synthese-divider-line right"></div>
+            </div>
+
+            <div class="synthese-pdf-block">
+                <div class="synthese-pdf-header">
+                    <div class="synthese-pdf-title">
+                        <div class="synthese-pdf-icon">📋</div>
+                        <div>
+                            <div class="synthese-pdf-name">Tableau de synthèse BTS SIO</div>
+                            <div class="synthese-pdf-sub">Document PDF · Récapitulatif des compétences</div>
+                        </div>
+                    </div>
+                    <div class="synthese-pdf-actions">
+                        <button class="synthese-btn-toggle" id="synthese-toggle-btn" onclick="toggleSynthese()">Afficher ▾</button>
+                        <a class="synthese-btn-dl" target="_blank" href="pdf/tableau-synthese.pdf" download>
+                            ↓ Ouvrir
+                        </a>
+                    </div>
+                </div>
+                <div class="synthese-pdf-viewer" id="synthese-viewer">
+                    <embed src="pdf/tableau-synthese.pdf" type="application/pdf">
                 </div>
             </div>
         </div>
+        <!-- ===== FIN TABLEAU DE SYNTHÈSE ===== -->
+
     </section>
 
     <!-- 05 — MES PROJETS -->
@@ -546,36 +599,13 @@
             <button class="filter-btn" data-cat="mysql">MySQL</button>
             <button class="filter-btn" data-cat="siteweb">Site Web</button>
             <button class="filter-btn" data-cat="roblox">Roblox</button>
+            <button class="filter-btn" data-cat="epreuve">Epreuve</button>
             <button class="filter-btn" data-cat="autres">Autres</button>
         </div>
         <div class="projects-grid" id="projectsGrid"></div>
     </section>
 
-    <!-- 06 — NUIT DE L'INFO -->
-    <section class="section-card" id="sec-ndi">
-        <div class="section-number">06</div>
-        <h3 class="section-title">Nuit de l'Info</h3>
-        <div class="stages-grid">
-            <!-- Carte NDI cliquable -->
-            <div class="ndi-card" onclick="openNDI()">
-                <div class="ndi-banner">
-                    <div class="ndi-star">🌙</div>
-                    <div class="ndi-label">Nuit de l'Info</div>
-                </div>
-                <div class="ndi-body">
-                    <span class="ndi-badge">Compétition nationale</span>
-                    <h4>Nuit de l'Info 2024</h4>
-                    <p>Développement d'une application web en une seule nuit, de la tombée de la nuit jusqu'à l'aube, en équipe avec d'autres étudiants BTS/IUT.</p>
-                    <div class="ndi-tags">
-                        <span class="stage-tag">HTML/CSS</span>
-                        <span class="stage-tag">JavaScript</span>
-                        <span class="stage-tag">PHP</span>
-                        <span class="stage-tag">Travail d'équipe</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- 07 — STAGES -->
     <section class="section-card" id="sec-stages">
@@ -730,147 +760,341 @@
 
 <script>
 /* ==============================
+   TABLEAU DE SYNTHÈSE
+============================== */
+let syntheseOpen = false;
+function toggleSynthese() {
+    syntheseOpen = !syntheseOpen;
+    const viewer = document.getElementById('synthese-viewer');
+    const btn = document.getElementById('synthese-toggle-btn');
+    if (syntheseOpen) {
+        viewer.classList.add('open');
+        btn.textContent = 'Masquer ▴';
+    } else {
+        viewer.classList.remove('open');
+        btn.textContent = 'Afficher ▾';
+    }
+}
+
+/* ==============================
    DONNÉES PROJETS
 ============================== */
 const projects = [
-    { id:'windows11', cat:'systeme', catLabel:'Système', title:'Optimisation Windows 11',
-      images:['https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=900&q=80','https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=80'],
-      desc:'Optimisation complète d\'un poste Windows 11 : désactivation des services inutiles, nettoyage du registre, scripts PowerShell pour automatiser les mises à jour. Gain mesuré : +30% rapidité au démarrage.',
-      note:'Projet personnel — Résultats vérifiés avec des benchmarks avant/après.',
-      tags:['Windows 11','PowerShell','Regedit','Task Scheduler'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'debian', cat:'systeme', catLabel:'Système', title:'Serveur Debian',
-      images:['https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=900&q=80','https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80'],
-      desc:'Installation et configuration d\'un serveur Debian : partitionnement LVM, sécurisation SSH, cron pour les sauvegardes, déploiement Apache. Utilisé comme labo personnel.',
-      note:'Projet BTS SIO — Note : 18/20.',
-      tags:['Debian 11','Bash','SSH','Cron','Apache'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'ad', cat:'serveur', catLabel:'Serveur', title:'Active Directory + DHCP',
+    { id:'windows11', cat:'systeme', catLabel:'Système', title:'Installation Windows 11 (en cours)',
+      images:["images/windows11-microsoft.jpg"],
+      desc:'Installation de windows 11 sur une machine virtuelle',
+      note:'Projet réalisé au lycée Ozenne Toulouse',
+      tags:['Windows 11','VM','ISO'],
+      pdf:'pdf/EN COURS.pdf' },
+    { id:'debian', cat:'systeme', catLabel:'Système', title:'Installation Debian 12 (en cours)',
+      images:["images/debian-12-rc-1280x640.jpg"],
+      desc:'Installation et configuration d\'un serveur Debian',
+      note:'Projet BTS SIO',
+      tags:['Debian 11','VM','ISO'],
+      pdf:'pdf/EN COURS.pdf' },
+    { id:'debian', cat:'systeme', catLabel:'Système', title:'Installation ArchLinux (en cours)',
+      images:["images/Arch-Linux.jpg"],
+      desc:'Installation Archlinux',
+      note:'Projet perso',
+      tags:['Archlinux','VM','ISO'],
+      pdf:'pdf/EN COURS.pdf' },
+    { id:'debian', cat:'systeme', catLabel:'Système', title:'Installation et utilisation PFsense',
+      images:["images/PF-sense.png"],
+      desc:"Installation et configuation de PfSense permettant de crée un reseau virtuel constitué d'un routeur, d'un dns et de plusieur pc",
+      note:'Projet BTS SIO.',
+      tags:['dns','dhcp',"iso", 'vm','reseaux'],
+      pdf:"pdf/pfsense.pdf" },
+    { id:'ad', cat:'serveur', catLabel:'Serveur', title:'Active Directory , DHCP , DNS (en cours)',
       images:['https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80','https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=900&q=80'],
       desc:'Domaine Active Directory complet : 20 utilisateurs, 5 groupes, GPO. Serveur DHCP pour attribution automatique d\'IP. Réalisé sous VMware.',
       note:'Projet BTS SISR — Note : 19/20.',
       tags:['Windows Server 2019','Active Directory','DHCP','Group Policy','VMware'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+      pdf:'pdf/EN COURS.pdf' },
     { id:'glpi', cat:'serveur', catLabel:'Serveur', title:'Déploiement GLPI',
       images:['https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80','https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80'],
       desc:'Installation GLPI sur Debian : gestion des tickets, inventaire parc informatique, règles d\'affectation automatique, intégration OCS Inventory.',
       note:'Projet BTS SIO — Note : 17/20.',
       tags:['Debian','GLPI','Apache','MySQL','PHP','OCS Inventory'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'meteo', cat:'arduino', catLabel:'Arduino', title:'Station Météo Connectée',
+      pdf:'pdf/EN COURS.pdf' },
+    { id:'meteo', cat:'serveur', catLabel:'Serveur', title:'Adressage IP (en cours)',
       images:['https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=900&q=80','https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80'],
-      desc:'Station météo mesurant température, humidité et pression. Affichage LCD 16x2, envoi série vers PC. Autonomie 24h sur batterie.',
-      note:'Projet personnel — Fonctionne en continu depuis 6 mois sans panne.',
-      tags:['Arduino Uno','DHT11','LCD 16x2','C++','Serial Monitor'],
+      desc:'Adressage IP et configuration réseau.',
+      note:'Projet BTS SIO.',
+      tags:['IP','Réseau','DHCP'],
+      pdf:'pdf/EN COURS.pdf' },
+    { id:'docker', cat:'serveur', catLabel:'Serveur', title:'Docker (en cours)',
+      images:['https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=900&q=80'],
+      desc:'Découverte et utilisation de Docker pour la containerisation.',
+      note:'Projet BTS SIO.',
+      tags:['Docker','Container','Linux'],
+      pdf:'pdf/EN COURS.pdf' },
+    { id:'proxmox', cat:'serveur', catLabel:'Serveur', title:'Proxmox (en cours)',
+      images:['https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=900&q=80'],
+      desc:'Installation et configuration de Proxmox.',
+      note:'Projet BTS SIO.',
+      tags:['Proxmox','VM','Virtualisation'],
+      pdf:'pdf/EN COURS.pdf' },
+    { id:'cisco', cat:'serveur', catLabel:'Serveur', title:'Cisco Packet Tracer (en cours)',
+      images:['https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=900&q=80'],
+      desc:'Simulation réseau avec Cisco Packet Tracer.',
+      note:'Projet BTS SIO.',
+      tags:['Cisco','Réseau','Simulation'],
+      pdf:'pdf/EN COURS.pdf' },
+    { id:'robot', cat:'arduino', catLabel:'Arduino', title:'Capteur de distance (en cours)',
+      images:['https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=900&q=80'],
+      desc:'Capteur de distance avec Arduino.',
+      note:'Projet scolaire.',
+      tags:['Arduino','Capteur','C++'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'robot', cat:'arduino', catLabel:'Arduino', title:'Robot Suiveur de Ligne',
-      images:['https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=900&q=80','https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900&q=80'],
-      desc:'Robot à 5 capteurs infrarouges avec algorithme PID. Châssis imprimé en 3D, alimentation LiPo.',
-      note:'Projet scolaire — 1er prix du concours robotique local.',
-      tags:['Arduino Nano','Capteurs IR','Moteurs DC','Ponte H','C++'],
+    { id:'feu', cat:'arduino', catLabel:'Arduino', title:'Feu rouge (en cours)',
+      images:['https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=80'],
+      desc:'Simulation feu rouge avec Arduino.',
+      note:'Projet BTS SIO.',
+      tags:['Arduino','LED','C++'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'biblio', cat:'java', catLabel:'Java', title:'Gestion de Bibliothèque',
-      images:['https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=80','https://images.unsplash.com/photo-1555066931-4365d14431b9?w=900&q=80'],
-      desc:'Application JavaFX de gestion de bibliothèque : ajout/modif/suppression de livres et emprunteurs, recherche avancée, export PDF. Tests JUnit.',
-      note:'Projet BTS SLAM — Note : 19/20.',
-      tags:['Java','JavaFX','MySQL','Maven','JUnit'],
+    { id:'bras', cat:'arduino', catLabel:'Arduino', title:'Bras robotique (en cours)',
+      images:['https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=900&q=80'],
+      desc:'Bras robotique contrôlé via Arduino.',
+      note:'Projet scolaire.',
+      tags:['Arduino','Servo','C++'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'contacts', cat:'csharp', catLabel:'C#', title:'Gestionnaire de Contacts',
-      images:['https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=900&q=80','https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?w=900&q=80'],
-      desc:'Application WinForms pour gérer des contacts avec photo, adresse, téléphone et email. Import/export CSV, recherche full-text, synchronisation SQL Server. Pattern MVVM.',
-      note:'Projet personnel — Utilisé quotidiennement.',
-      tags:['C#','WinForms','SQL Server','.NET','Entity Framework'],
+    { id:'java1', cat:'java', catLabel:'Java', title:'Découverte Java (en cours)',
+      images:['https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=80'],
+      desc:'Installation Java et premiers programmes.',
+      note:'Projet BTS SLAM.',
+      tags:['Java','POO'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'ecommerce', cat:'mysql', catLabel:'MySQL', title:'Base E-commerce',
-      images:['https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80','https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80'],
-      desc:'15 tables, contraintes d\'intégrité, vues, procédures stockées et triggers. Script Python pour générer 10 000 enregistrements de test. Optimisation des requêtes.',
-      note:'Projet BTS SLAM — Note : 20/20.',
-      tags:['MySQL','PhpMyAdmin','Workbench','SQL','Python'],
+    { id:'valres', cat:'java', catLabel:'Java', title:'Projet Valres (en cours)',
+      images:['https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=80'],
+      desc:'Application JavaFX de gestion.',
+      note:'Projet BTS SLAM.',
+      tags:['Java','JavaFX','MySQL','Maven'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'portfolio', cat:'siteweb', catLabel:'Site Web', title:'Portfolio Personnel',
-      images:['https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?w=900&q=80','https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&q=80'],
-      desc:'Ce portfolio : filtres dynamiques, modals interactives, design responsive glassmorphism, animations CSS avancées. Backend PHP pour les données.',
+    { id:'sapin', cat:'csharp', catLabel:'C#', title:'Création sapin (en cours)',
+      images:['https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=900&q=80'],
+      desc:'Dessin d\'un sapin en C# en console.',
+      note:'Projet BTS SLAM.',
+      tags:['C#','.NET'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'bank', cat:'csharp', catLabel:'C#', title:'Bank (en cours)',
+      images:['https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=900&q=80'],
+      desc:'Simulation bancaire en C#.',
+      note:'Projet BTS SLAM.',
+      tags:['C#','WinForms','SQL Server','.NET'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'mysql1', cat:'mysql', catLabel:'MySQL', title:'Découverte MySQL (en cours)',
+      images:['https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80'],
+      desc:'Premiers pas avec MySQL et PhpMyAdmin.',
+      note:'Projet BTS SLAM.',
+      tags:['MySQL','PhpMyAdmin','SQL'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'bdd', cat:'mysql', catLabel:'MySQL', title:'Création base de données (en cours)',
+      images:['https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80'],
+      desc:'Modélisation et création d\'une base de données complète.',
+      note:'Projet BTS SLAM.',
+      tags:['MySQL','Workbench','SQL'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'droits', cat:'mysql', catLabel:'MySQL', title:'Gestion des droits (en cours)',
+      images:['https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80'],
+      desc:'Gestion des droits utilisateurs MySQL.',
+      note:'Projet BTS SLAM.',
+      tags:['MySQL','Sécurité','SQL'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'injection', cat:'mysql', catLabel:'MySQL', title:'Injection SQL (en cours)',
+      images:['https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80'],
+      desc:'Étude des injections SQL et protections.',
+      note:'Projet BTS SLAM.',
+      tags:['MySQL','Sécurité','SQL'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'triggers', cat:'mysql', catLabel:'MySQL', title:'Triggers (en cours)',
+      images:['https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80'],
+      desc:'Création et utilisation de triggers MySQL.',
+      note:'Projet BTS SLAM.',
+      tags:['MySQL','Triggers','SQL'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'portfolio', cat:'siteweb', catLabel:'Site Web', title:'Portfolio Personnel (en cours)',
+      images:['https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?w=900&q=80'],
+      desc:'Ce portfolio : filtres dynamiques, modals interactives, design responsive glassmorphism.',
       note:'Projet en cours d\'amélioration continue.',
       tags:['HTML5','CSS3','JavaScript','PHP','MySQL'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'stocks', cat:'siteweb', catLabel:'Site Web', title:'Gestion de Stocks',
-      images:['https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80','https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80'],
-      desc:'Application web de gestion de stocks pour PME : ajout/modif produits, suivi mouvements, alertes stocks faibles, rapports PDF, graphiques de tendance. Interface responsive.',
-      note:'Projet BTS SLAM — Note : 18/20.',
-      tags:['PHP','MySQL','Bootstrap','Chart.js','jQuery'],
+    { id:'stocks', cat:'siteweb', catLabel:'Site Web', title:'Gestion de Stocks (en cours)',
+      images:['https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80'],
+      desc:'Application web de gestion de stocks pour PME.',
+      note:'Projet BTS SLAM.',
+      tags:['PHP','MySQL','Bootstrap','Chart.js'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'elevateur', cat:'roblox', catLabel:'Roblox', title:'Système d\'Élevateur',
-      images:['https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=900&q=80','https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=900&q=80'],
-      desc:'Élevateur fonctionnel en Lua : déplacements fluides entre étages, détection joueurs, UI personnalisée. Compatible plusieurs styles de jeu.',
-      note:'Projet personnel — Plus de 5 000 visites sur les jeux l\'utilisant.',
-      tags:['Roblox Studio','Lua','UI Design','Modeling'],
+    { id:'htmlcss', cat:'siteweb', catLabel:'Site Web', title:'Découverte HTML/CSS (en cours)',
+      images:['https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80'],
+      desc:'Premiers pas en HTML/CSS.',
+      note:'Projet BTS SLAM.',
+      tags:['HTML','CSS'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'farm', cat:'roblox', catLabel:'Roblox', title:'Farm Automatique',
-      images:['https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=900&q=80','https://images.unsplash.com/photo-1488229297570-58520851e868?w=900&q=80'],
-      desc:'Système de farm automatique via Pathfinding Service. Sauvegarde DataStore, statistiques temps réel, interface intuitive.',
-      note:'Projet collaboratif — Intégré dans un jeu avec 10 000+ joueurs actifs.',
-      tags:['Roblox Studio','Lua','DataStore','Pathfinding'],
+    { id:'sam', cat:'siteweb', catLabel:'Site Web', title:'Projet SAM (en cours)',
+      images:['https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80'],
+      desc:'Projet SAM en développement web.',
+      note:'Projet BTS SLAM.',
+      tags:['PHP','MySQL','HTML/CSS'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'python', cat:'autres', catLabel:'Autres', title:'Script Python Automatisation',
-      images:['https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900&q=80','https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80'],
-      desc:'Script nettoyant les logs système, envoyant des rapports quotidiens par email, sauvegardant les fichiers critiques. Génère un rapport HTML. Utilisé en production sur 3 serveurs.',
-      note:'Utilisé en stage — Gain estimé : 3h/semaine.',
-      tags:['Python','Pandas','SMTP','OS module','Logging'],
+    { id:'jsphp', cat:'siteweb', catLabel:'Site Web', title:'Découverte JS/PHP (en cours)',
+      images:['https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80'],
+      desc:'Introduction à JavaScript et PHP côté serveur.',
+      note:'Projet BTS SLAM.',
+      tags:['PHP','JavaScript'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'gsb', cat:'siteweb', catLabel:'Site Web', title:'GSB site dynamique (en cours)',
+      images:['https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80'],
+      desc:'Site dynamique GSB en PHP/MySQL.',
+      note:'Projet BTS SLAM.',
+      tags:['PHP','MySQL','Bootstrap'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'mvc', cat:'siteweb', catLabel:'Site Web', title:'Découverte MVC (en cours)',
+      images:['https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80'],
+      desc:'Architecture MVC en PHP.',
+      note:'Projet BTS SLAM.',
+      tags:['PHP','MVC','MySQL'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'api', cat:'siteweb', catLabel:'Site Web', title:'Découverte API (en cours)',
+      images:['https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80'],
+      desc:'Création et consommation d\'une API REST.',
+      note:'Projet BTS SLAM.',
+      tags:['PHP','API','REST','JSON'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'ndisite', cat:'siteweb', catLabel:'Site Web', title:"Nuit de l'info (en cours)",
+      images:['https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80'],
+      desc:"Application web développée lors de la Nuit de l'Info.",
+      note:'Projet BTS SLAM.',
+      tags:['PHP','MySQL','Bootstrap','JavaScript'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'elevateur', cat:'roblox', catLabel:'Roblox', title:'Système d\'Élevateur (en cours)',
+      images:['https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=900&q=80'],
+      desc:'Élevateur fonctionnel en Lua : déplacements fluides entre étages, UI personnalisée.',
+      note:'Projet personnel — Plus de 5 000 visites.',
+      tags:['Roblox Studio','Lua','UI Design'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'farm', cat:'roblox', catLabel:'Roblox', title:'Farm Automatique (en cours)',
+      images:['https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=900&q=80'],
+      desc:'Système de farm automatique via Pathfinding Service.',
+      note:'Projet collaboratif.',
+      tags:['Roblox Studio','Lua','DataStore'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'python', cat:'autres', catLabel:'Autres', title:'Script Python Automatisation (en cours)',
+      images:['https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900&q=80'],
+      desc:'Script nettoyant les logs système, envoyant des rapports quotidiens.',
+      note:'Utilisé en stage.',
+      tags:['Python','Pandas','SMTP'],
+      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
+    { id:'ndiep', cat:'epreuve', catLabel:'Epreuve', title:"Nuit de l'informatique 2024 et 2025",
+      images:['https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900&q=80'],
+      desc:"Participation à la Nuit de l'Info, événement national de développement web en équipe.",
+      note:'Travail en équipe pour développer nos compétences.',
+      tags:['HTML','CSS','JavaScript','PHP','MySQL'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' }
 ];
+
+
+
+
+
+
+
+
+
 
 /* ==============================
    DONNÉES STAGES
 ============================== */
 const stages = [
-    { title:'Support informatique & réseau', company:'Mairie de [Ville]', date:'Avril – Mai 2022', duration:'5 semaines',
-      images:['https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80','https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80','https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80'],
-      desc:'Support de premier niveau : dépannage matériel/logiciel, configuration de postes, installation d\'imprimantes réseau, gestion des comptes Active Directory. Mise à jour du parc (50 postes).',
-      tags:['Windows 10','Active Directory','GLPI','Helpdesk'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf',
-      lettre:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { title:'Développement application web', company:'Agence WebCode, Toulouse', date:'Novembre – Décembre 2022', duration:'6 semaines',
-      images:['https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=80','https://images.unsplash.com/photo-1555066931-4365d14431b9?w=900&q=80'],
-      desc:'Back-office e-commerce en PHP/MySQL (commandes, produits, utilisateurs). Intégration maquettes Figma en HTML/CSS responsive. Équipe de 4 avec Jira et Git.',
-      tags:['PHP','MySQL','HTML/CSS','JavaScript','Git','Figma'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf',
-      lettre:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { title:'Administration système Linux', company:'DataSol Informatique', date:'Février – Mars 2023', duration:'5 semaines',
-      images:['https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=900&q=80','https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=900&q=80','https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80'],
-      desc:'Serveurs Debian en production : scripts Bash de monitoring, sauvegardes cron, sécurisation SSH (clés, fail2ban), Nginx avec SSL Let\'s Encrypt. Documentation complète.',
-      tags:['Debian','Bash','Nginx','SSH','Cron','Let\'s Encrypt'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf',
-      lettre:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { title:'Développement logiciel C#', company:'LogiSoft Solutions', date:'Juin – Juillet 2023', duration:'7 semaines',
-      images:['https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=900&q=80','https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=900&q=80'],
-      desc:'Logiciel de gestion WinForms C# + SQL Server : suivi des interventions, génération de rapports PDF, export CSV. Git + revues de code hebdomadaires.',
-      tags:['C#','WinForms','SQL Server','.NET','Entity Framework','Git'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf',
-      lettre:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { title:'Intégration & déploiement GLPI', company:'Réseau SICOM', date:'Octobre – Novembre 2023', duration:'5 semaines',
-      images:['https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80','https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80'],
-      desc:'GLPI sur 3 agences (~120 postes) : inventaire OCS, SLA, tableau de bord personnalisé, formation techniciens. Gain : 4h/semaine sur le suivi des incidents.',
-      tags:['GLPI','OCS Inventory','Debian','MySQL','Apache','Formation'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf',
-      lettre:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { title:'Développement API REST', company:'StartApp Toulouse', date:'Janvier – Février 2024', duration:'6 semaines',
-      images:['https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80','https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900&q=80'],
-      desc:'API REST Laravel (JWT, 32 endpoints, Swagger, PHPUnit) consommée par une app Flutter. Déploiement VPS + CI/CD GitHub Actions.',
-      tags:['PHP','Laravel','JWT','Swagger','PHPUnit','GitHub Actions'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf',
-      lettre:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { title:'Migration infrastructure cloud', company:'Cabinet Expertise Comptable', date:'Avril – Mai 2024', duration:'5 semaines',
-      images:['https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80','https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=900&q=80'],
-      desc:'Migration on-premise vers Azure : VM Azure, migration données, Azure AD Connect, synchronisation utilisateurs. Rédaction du PRA mis à jour.',
-      tags:['Azure','Azure AD','Windows Server','PowerShell','PRA'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf',
-      lettre:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { title:'Développement web full-stack', company:'Agence Créa&Dev', date:'Novembre – Décembre 2024', duration:'6 semaines',
-      images:['https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80','https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80'],
-      desc:'Site vitrine + espace client PME : front HTML/CSS/JS, back PHP avec auth sécurisée, gestion devis/factures. MySQL optimisé, hébergement OVH, 4 sprints agiles.',
-      tags:['HTML5','CSS3','JavaScript','PHP','MySQL','OVH','Agile'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf',
-      lettre:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' }
+  { 
+    title:'Support informatique & découverte métier', 
+    company:'Nessuno Info (Fleurance)', 
+    date:'2021', 
+    duration:'1 semaine',
+    images:[
+      'images/nessuno.jpg'
+    ],
+    desc:'Stage d\'observation permettant la découverte du métier de technicien dépanneur informatique.',
+    tags:['Support','Maintenance','Découverte','Windows'],
+    pdf:'',
+    lettre:''
+  },
+
+  { 
+    title:'Maintenance informatique', 
+    company:'Castel & Fromaget (Fleurance)', 
+    date:'2022', 
+    duration:'6 semaines',
+    images:[
+      'images/castel.jpg',
+      'images/castel-map.png'
+    ],
+    desc:'Participation au dépannage et à la maintenance des équipements informatiques ainsi qu\'à l\'assistance aux utilisateurs.',
+    tags:['Maintenance','Support','Réseau','Windows'],
+    pdf:'pdf/cstl-rapport.pdf',
+    lettre:''
+  },
+
+  { 
+    title:'Maintenance informatique', 
+    company:'Établissement Public de Santé Lomagne (Fleurance)', 
+    date:'2023', 
+    duration:'4 semaines',
+    images:[
+      'images/epsl.jpg',
+      'images/epsl-map.png',
+      'images/epsl-site.png'
+    ],
+    desc:"realisation d'un site web pour l'epsl.",
+    tags:['Maintenance','Support','Parc informatique','Dépannage'],
+    pdf:'pdf/rapprt-de-stage-2023.pdf',
+    lettre:''
+  },
+
+  { 
+    title:'Développement web interne', 
+    company:'Établissement Public de Santé Lomagne (Fleurance)', 
+    date:'2024', 
+    duration:'4 semaines',
+    images:[
+      'images/epsl.jpg',
+      'images/epsl-map.png',
+      'images/epsl-mission.png'
+    ],
+    desc:'Développement de deux outils internes : un site de gestion de table d’adressage IP ',
+    tags:['HTML','CSS','JavaScript','Réseau','Ticketing'],
+    pdf:"pdf/rapprt-de-stage-2024.pdf",
+    lettre:''
+  },
+
+  { 
+    title:'Développement web Node.js', 
+    company:'Tentacle Studio', 
+    date:'2025', 
+    duration:'6 semaines',
+    images:[
+      'https://images.unsplash.com/photo-1555066931-4365d14431b9?w=900&q=80',
+      'https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=900&q=80'
+    ],
+    desc:'Réalisation d\'un site web d\'administration pour un jeu Fantasy Racing avec Node.js.',
+    tags:['Node.js','JavaScript','Web','Back-end'],
+    pdf:'',
+    lettre:''
+  },
+
+  { 
+    title:'Développement web PHP', 
+    company:'Lycée Ozenne (Toulouse)', 
+    date:'2026', 
+    duration:'6 semaines',
+    images:[
+      'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80',
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80'
+    ],
+    desc:'Développement d\'un site web permettant l\'inscription de candidats avec gestion des formulaires et base de données.',
+    tags:['PHP','MySQL','Formulaires','Web'],
+    pdf:'',
+    lettre:''
+  }
 ];
 
 /* ==============================
@@ -890,7 +1114,6 @@ projects.forEach(p => {
     pgrid.appendChild(card);
 });
 
-// Filtres projets
 document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -1079,7 +1302,6 @@ document.getElementById('btn-acces').onclick = () => {
         content.style.display='block';
         setTimeout(()=>{
             content.style.opacity='1';
-            // Animer les barres de compétences
             document.querySelectorAll('.progress-fill').forEach(bar=>{
                 bar.style.width = bar.getAttribute('data-size');
             });
