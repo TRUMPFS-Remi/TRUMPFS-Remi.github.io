@@ -378,7 +378,7 @@
                     </div>
                     <div class="fc-back">
                         <h4>Mon Parcours Web</h4>
-                        <p>Passionné de développement depuis mes 15 ans, j'ai débuté en autodidacte avec HTML/CSS a l'age de 15 ans. Mon BTS SIO m'a permis de transformer cette passion en un avenir.</p>
+                       <p>- Esprit analytique<br>- Pensée structurée<br>- Sens du détail<br>- Créativité</p>
                     </div>
                 </div>
             </div>
@@ -406,7 +406,7 @@
                     </div>
                     <div class="fc-back">
                         <h4>Logiciel & Algorithmie</h4>
-                        <p>Du script au logiciel complet, la découverte du C# a été un tournant dans ma compréhension de l'orienté objet. Lua via Roblox m'a appris la logique événementielle et la gestion d'état en temps réel.</p>
+                        <p>- Logique de programmation<br>- Capacité d’adaptation aux langages<br>- Résolution de problèmes<br>- Rigueur et structuration du code</p>
                     </div>
                 </div>
             </div>
@@ -416,17 +416,17 @@
                         <span class="flip-hint">clic ↻</span>
                         <div class="fc-title">Bases de Données</div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>SQL / MySQL</span><span>90%</span></div>
+                            <div class="skill-info"><span>SQL</span><span>80%</span></div>
                             <div class="progress-bar"><div class="progress-fill" data-size="90%"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>SQL Server</span><span>75%</span></div>
+                            <div class="skill-info"><span>Gestion des access</span><span>75%</span></div>
                             <div class="progress-bar"><div class="progress-fill" data-size="75%"></div></div>
                         </div>
                     </div>
                     <div class="fc-back">
                         <h4>Gestion de Données</h4>
-                        <p>La structuration de l'information est au cœur de mes projets. J'ai appris à modéliser et optimiser des bases de données SQL complexes, avec vues, triggers et procédures stockées.</p>
+                        <p>- Organisation et structuration des données<br>- Maîtrise des requêtes SQL<br>- Gestion et optimisation des bases<br>- Rigueur dans la manipulation des données</p>
                     </div>
                 </div>
             </div>
@@ -450,7 +450,7 @@
                     </div>
                     <div class="fc-back">
                         <h4>Infrastructure</h4>
-                        <p>Issu d'un Bac Pro SN RISC, j'ai une solide base en administration système et réseau. Active Directory, DHCP, virtualisation VMware et sécurisation des serveurs n'ont plus de secrets pour moi.</p>
+                        <p>- Administration de systèmes Linux (Debian)<br>- Gestion de serveurs Windows<br>- Utilisation de scripts PowerShell et Bash<br>- Compréhension des réseaux et des environnements serveurs</p>
                     </div>
                 </div>
             </div>
@@ -474,7 +474,7 @@
                     </div>
                     <div class="fc-back">
                         <h4>Méthodes de Travail</h4>
-                        <p>Git pour le versioning, Trello pour la gestion de projet. La méthode Agile est au cœur de ma façon de travailler.</p>
+                        <p>- Gestion de versions avec Git et GitHub<br>- Travail en méthode Agile (organisation de projets)<br>- Notions de design et d’ergonomie d’interfaces<br>- Collaboration et gestion de projet</p>
                     </div>
                 </div>
             </div>
@@ -493,8 +493,7 @@
                         </div>
                     </div>
                     <div class="fc-back">
-                        <h4>Humain avant tout</h4>
-                        <p>Autodidacte depuis mes 15 ans, j'ai développé une grande autonomie et une forte capacité d'adaptation. Curieux, rigoureux et toujours partant pour apprendre, je m'intègre facilement dans une équipe.</p>
+                        <p>- Autonomie dans la réalisation des projets<br>- Esprit d’équipe et collaboration efficace<br>- Communication et entraide<br>- Adaptabilité en environnement de travail</p>
                     </div>
                 </div>
             </div>
@@ -599,8 +598,9 @@
             <button class="filter-btn" data-cat="mysql">MySQL</button>
             <button class="filter-btn" data-cat="siteweb">Site Web</button>
             <button class="filter-btn" data-cat="roblox">Roblox</button>
-            <button class="filter-btn" data-cat="epreuve">Réalisations professionnelles</button>
             <button class="filter-btn" data-cat="autres">Autres</button>
+            <button class="filter-btn" data-cat="epreuve">Réalisations professionnelles</button>
+            
         </div>
         <div class="projects-grid" id="projectsGrid"></div>
     </section>
@@ -737,16 +737,12 @@
                 <div class="popup-section-title">Documents</div>
                 <div class="popup-tabs">
                     <div class="popup-tab active" onclick="switchTab(this,'tab-doc')">📄 Rapport de stage</div>
-                    <div class="popup-tab" onclick="switchTab(this,'tab-lettre')">💌 Lettre de remerciement</div>
                 </div>
                 <div class="popup-tab-content active" id="tab-doc">
                     <div class="pdf-frame"><embed id="sp-pdf" src="" type="application/pdf"></div>
                     <div class="pdf-dl"><a id="sp-pdf-dl" href="#" class="btn-gold" download>Télécharger le rapport</a></div>
                 </div>
-                <div class="popup-tab-content" id="tab-lettre">
-                    <div class="pdf-frame"><embed id="sp-lettre" src="" type="application/pdf"></div>
-                    <div class="pdf-dl"><a id="sp-lettre-dl" href="#" class="btn-gold" download>Télécharger la lettre</a></div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -805,7 +801,7 @@ const projects = [
       tags:['dns','dhcp',"iso", 'vm','reseaux'],
       pdf:"pdf/pfsense.pdf" },
     { id:'ad', cat:'serveur', catLabel:'Serveur', title:'Active Directory , DHCP , DNS (en cours)',
-      images:['https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80','https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=900&q=80'],
+      images:['images/ad.png'],
       desc:'Domaine Active Directory complet : 20 utilisateurs, 5 groupes, GPO. Serveur DHCP pour attribution automatique d\'IP. Réalisé sous VMware.',
       note:'Projet BTS SISR — Note : 19/20.',
       tags:['Windows Server 2019','Active Directory','DHCP','Group Policy','VMware'],
@@ -817,7 +813,7 @@ const projects = [
       tags:['Debian','GLPI','Apache','MySQL','PHP','OCS Inventory'],
       pdf:'pdf/EN COURS.pdf' },
     { id:'meteo', cat:'serveur', catLabel:'Serveur', title:'Adressage IP (en cours)',
-      images:['https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=900&q=80','https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80'],
+      images:['images/adressageip.png'],
       desc:'Adressage IP et configuration réseau.',
       note:'Projet BTS SIO.',
       tags:['IP','Réseau','DHCP'],
@@ -984,12 +980,50 @@ const projects = [
       note:'Utilisé en stage.',
       tags:['Python','Pandas','SMTP'],
       pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' },
-    { id:'ndiep', cat:'epreuve', catLabel:'Epreuve', title:"Nuit de l'informatique 2024 et 2025",
-      images:['https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900&q=80'],
+
+
+    { id:'ndiep', cat:'epreuve', catLabel:'Epreuve', title:"Nuit de l'informatique 2024",
+      images:['images/nin2024.png'],
       desc:"Participation à la Nuit de l'Info, événement national de développement web en équipe.",
       note:'Travail en équipe pour développer nos compétences.',
       tags:['HTML','CSS','JavaScript','PHP','MySQL'],
-      pdf:'https://www.afpa.fr/content/uploads/2020/04/AFPA_Referentiel_BTS_SIO_2019.pdf' }
+      pdf:"pdf/Nuit de l'info 2024.pdf"},
+      { id:'ndiep', cat:'epreuve', catLabel:'Epreuve', title:"Nuit de l'informatique 2025",
+      images:['images/nin2025.png'],
+      desc:"Participation à la Nuit de l'Info, événement national de développement web en équipe.",
+      note:'Travail en équipe pour développer nos compétences.',
+      tags:['HTML','CSS','JavaScript','PHP','MySQL'],
+      pdf:"pdf/Nuit de l'info 2025.pdf"},
+      { id:'ndiep', cat:'epreuve', catLabel:'Epreuve', title:"Conception & dev site web statique HTML, CSS Projet SAM",
+      images:['images/sam.png'],
+      desc:"Participation au projet sam permetant de decouvrir le travail en equipe ainci que le html css et js.",
+      note:'Travail en équipe pour développer nos compétences.',
+      tags:['HTML','CSS','JavaScript','PHP','MySQL'],
+      pdf:'pdf/Présentation SAM.pdf' },
+      { id:'ndiep', cat:'epreuve', catLabel:'Epreuve', title:"Conception et dev site Dynamique (html,css,php) GSB",
+      images:['images/gsb.png'],
+      desc:"Participer au projet GSB pour utiliser le php et faire un projet concret",
+      note:'Travail en équipe pour développer nos compétences.',
+      tags:['HTML','CSS','JavaScript','PHP','MySQL'],
+      pdf:'pdf/GSB-compte rendu.pdf' },
+      { id:'ndiep', cat:'epreuve', catLabel:'Epreuve', title:"Parametrage et utilisation de GLPI(Inventaire et Tickets)",
+      images:['images/glpi.png'],
+      desc:"Découverte de glpi, faire de stickets et les resoudres, gerer un parc informatique.",
+      note:'Travail en équipe pour développer nos compétences.',
+      tags:['HTML','CSS','JavaScript','PHP','MySQL'],
+      pdf:'pdf/glpi.pdf' },
+      { id:'ndiep', cat:'epreuve', catLabel:'Epreuve', title:"Realisation d'un site web en node.js pour l'administration de partie d'un jeu mobile",
+      images:['images/tentacle-studio.png'],
+      desc:"Stage permettant d'aprendre le node js ainci que le travail en equipe.",
+      note:'Travail en équipe pour développer nos compétences.',
+      tags:['HTML','CSS','JavaScript','PHP','MySQL'],
+      pdf:'pdf/rapprt-de-stage-2025.pdf' },
+      { id:'ndiep', cat:'epreuve', catLabel:'Epreuve', title:"Realisation d'un site web pour facilité l'inscription a une formation",
+      images:['images/khubages.png'],
+      desc:"réalsiation du projet khubage me permettant de decouvrir ",
+      note:'Travail en équipe pour développer nos compétences.',
+      tags:['HTML','CSS','JavaScript','PHP','MySQL'],
+      pdf:'pdf/doc_Khubage.pdf' }
 ];
 
 
@@ -1016,7 +1050,6 @@ const stages = [
     desc:'Stage d\'observation permettant la découverte du métier de technicien dépanneur informatique.',
     tags:['Support','Maintenance','Découverte','Windows'],
     pdf:'',
-    lettre:''
   },
 
   { 
@@ -1031,7 +1064,6 @@ const stages = [
     desc:'Participation au dépannage et à la maintenance des équipements informatiques ainsi qu\'à l\'assistance aux utilisateurs.',
     tags:['Maintenance','Support','Réseau','Windows'],
     pdf:'pdf/cstl-rapport.pdf',
-    lettre:''
   },
 
   { 
@@ -1047,7 +1079,6 @@ const stages = [
     desc:"realisation d'un site web pour l'epsl.",
     tags:['Maintenance','Support','Parc informatique','Dépannage'],
     pdf:'pdf/rapprt-de-stage-2023.pdf',
-    lettre:''
   },
 
   { 
@@ -1063,7 +1094,6 @@ const stages = [
     desc:'Développement de deux outils internes : un site de gestion de table d’adressage IP ',
     tags:['HTML','CSS','JavaScript','Réseau','Ticketing'],
     pdf:"pdf/rapprt-de-stage-2024.pdf",
-    lettre:''
   },
 
   { 
@@ -1072,13 +1102,11 @@ const stages = [
     date:'2025', 
     duration:'6 semaines',
     images:[
-      'https://images.unsplash.com/photo-1555066931-4365d14431b9?w=900&q=80',
-      'https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=900&q=80'
+      'images/tentacle-studio.png',
     ],
     desc:'Réalisation d\'un site web d\'administration pour un jeu Fantasy Racing avec Node.js.',
     tags:['Node.js','JavaScript','Web','Back-end'],
-    pdf:'',
-    lettre:''
+    pdf:'pdf/rapprt-de-stage-2025.pdf',
   },
 
   { 
@@ -1093,7 +1121,6 @@ const stages = [
     desc:'Développement d\'un site web permettant l\'inscription de candidats avec gestion des formulaires et base de données.',
     tags:['PHP','MySQL','Formulaires','Web'],
     pdf:'',
-    lettre:''
   }
 ];
 
@@ -1234,8 +1261,6 @@ function openStage(idx) {
     document.getElementById('sp-desc').textContent = s.desc;
     document.getElementById('sp-pdf').src = s.pdf;
     document.getElementById('sp-pdf-dl').href = s.pdf;
-    document.getElementById('sp-lettre').src = s.lettre;
-    document.getElementById('sp-lettre-dl').href = s.lettre;
     spImgs = s.images;
     const car = document.getElementById('sp-carousel');
     const dots = document.getElementById('sp-dots');
